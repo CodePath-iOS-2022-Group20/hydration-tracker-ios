@@ -67,7 +67,7 @@ An app that keeps track of how much water a user drinks, reminds them to drink w
 ## Digital Wireframe
 [Add picture of your hand sketched wireframes in this section]
 <img src="https://i.imgur.com/nPLDBH1.png
-" width=600>
+">
 
 ## Schema 
 [This section will be completed in Unit 9]
