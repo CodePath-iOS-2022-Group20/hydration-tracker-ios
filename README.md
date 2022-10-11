@@ -17,7 +17,7 @@ An app that keeps track of how much water a user drinks, reminds them to drink w
 - **Story:** This app would have clear value to people who have trouble remembering to stay hydrated and would like to track that habit over time. It would help people develop an essential healthy habit
 - **Market:** This app is marketed towards someone who wants to overcome a bad habit of not drinking enough water. The audience is large, but still provides large value.
 - **Habit:** This app is specifically for habit formation and repeated use --> we want users to build a habit of staying hydrated
-- **Scope:**
+- **Scope:** This project's base form is simple and has utility, and it also has many features to add that can make it more appealing and useful to the user. This means that creating the app in the Codepath course is an achievable goal.
 
 ## Product Spec
 
