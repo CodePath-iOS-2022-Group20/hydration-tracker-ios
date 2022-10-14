@@ -82,6 +82,24 @@ An app that keeps track of how much water a user drinks, reminds them to drink w
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
+
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | waterAmount   | Number   | amount of water consumed that day |
+   | waterGoalCount   | number| image author |
+   | waterTotal  | number     | total amount of water since using the app |
+   | streakCount       | number   | image caption by author |
+   | dayMetCount | Number   | number of comments that has been posted to an image |
+   | dayMissedCount| Number   | number of likes for the post |
+   | createdAt     | DateTime | date when the water input is created (default field) |
+   | lastUpdatedAt | DateTime | date when water amount is last updated (default field) |
+   | day | Date | date on the calendar that changes color if the water goal is met on that day |
+   | userId | String | unique id for the user post (default field) |
+   | userPassword | String | password created by the user |
+   
+   
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
