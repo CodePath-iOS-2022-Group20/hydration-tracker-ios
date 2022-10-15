@@ -79,7 +79,6 @@ An app that keeps track of how much water a user drinks, reminds them to drink w
 <img src="https://i.imgur.com/Fqw6qA2.png">
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
 
 
@@ -98,7 +97,6 @@ An app that keeps track of how much water a user drinks, reminds them to drink w
    | userPassword | String | password created by the user |
    
    
-
 ### Networking
 
 #### List of network requests by screen
