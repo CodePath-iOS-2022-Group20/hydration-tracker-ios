@@ -81,13 +81,12 @@ An app that keeps track of how much water a user drinks, reminds them to drink w
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
 
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
    | waterAmount   | Number   | amount of water consumed that day |
-   | waterGoalCount   | number| image author |
+   | waterGoalAmounr   | number| amount of water to reach daily goal |
    | waterTotal  | number     | total amount of water since using the app |
    | streakCount       | number   | image caption by author |
    | dayMetCount | Number   | number of comments that has been posted to an image |
@@ -101,6 +100,33 @@ An app that keeps track of how much water a user drinks, reminds them to drink w
    
 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+#### List of network requests by screen
+   - Home Feed Screen
+      - (Read/GET) Query all water update posts where user is author
+         ```swift
+         let query = PFQuery(className:"Post")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
+      - (Delete) Delete existing water post of that day
+   - Create Post Screen
+      - (Create/POST) Create a new water amount tracking
+      - (Create/POST) Create or edit goals for water amount intake
+   - Profile Screen
+      - (Read/GET) Query logged in user posts
+      - (Read/GET) Query logged in user stats about their streaks, daily goal met, water amount
+      - (Update/PUT) Update user profile image
+   - Calendar Screen
+      - (Read/GET) Query the calendar of current month
+      - (Read/GET) Query logged in user days that the goal met of the current month
+      - (Update/PUT) Update user profile image
+
