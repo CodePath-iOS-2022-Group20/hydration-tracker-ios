@@ -1,0 +1,6 @@
+framework module Pods_Hydration_Tracker_Hydration_TrackerUITests {
+  umbrella header "Pods-Hydration-Tracker-Hydration-TrackerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
