@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4sF-FD-m9m">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hydration_Tracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,10 +47,95 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="5HG-NL-DHK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-29.23076923076923" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="905" y="-405"/>
+        </scene>
+        <!--Stats-->
+        <scene sceneID="4Ik-U0-16w">
+            <objects>
+                <viewController title="Stats" id="s68-2X-MOb" customClass="StatsViewController" customModule="Hydration_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sPp-0I-JRS">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ewc-fb-qzg">
+                                <rect key="frame" x="0.0" y="47" width="390" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StatsCell" rowHeight="117" id="e1h-S7-6oh" customClass="StatsCell" customModule="Hydration_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="117"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e1h-S7-6oh" id="Dj0-2Q-g3B">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="117"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inR-jA-MxS">
+                                                    <rect key="frame" x="20" y="48" width="31" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Snw-Be-3FG">
+                                                    <rect key="frame" x="61" y="48" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Snw-Be-3FG" firstAttribute="leading" secondItem="inR-jA-MxS" secondAttribute="trailing" constant="10" id="4BB-0h-WF3"/>
+                                                <constraint firstItem="inR-jA-MxS" firstAttribute="leading" secondItem="Dj0-2Q-g3B" secondAttribute="leadingMargin" id="RmD-yb-jhv"/>
+                                                <constraint firstItem="Snw-Be-3FG" firstAttribute="centerY" secondItem="Dj0-2Q-g3B" secondAttribute="centerY" id="TEf-wP-Czh"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Snw-Be-3FG" secondAttribute="trailing" constant="10" id="Y1E-me-puq"/>
+                                                <constraint firstItem="inR-jA-MxS" firstAttribute="centerY" secondItem="Dj0-2Q-g3B" secondAttribute="centerY" id="xTF-DR-CDD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="statLabel" destination="inR-jA-MxS" id="4HI-zM-Wh2"/>
+                                            <outlet property="valueLabel" destination="Snw-Be-3FG" id="mbD-eY-kci"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9MR-wa-4TC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9MR-wa-4TC" firstAttribute="trailing" secondItem="ewc-fb-qzg" secondAttribute="trailing" id="E7f-8H-N7E"/>
+                            <constraint firstItem="ewc-fb-qzg" firstAttribute="top" secondItem="9MR-wa-4TC" secondAttribute="top" id="MjT-1C-tKK"/>
+                            <constraint firstItem="9MR-wa-4TC" firstAttribute="bottom" secondItem="ewc-fb-qzg" secondAttribute="bottom" id="mEO-Mj-q4f"/>
+                            <constraint firstItem="ewc-fb-qzg" firstAttribute="leading" secondItem="9MR-wa-4TC" secondAttribute="leading" id="qeN-Mq-1Ab"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="f3j-aH-Dxc"/>
+                    <connections>
+                        <outlet property="statsTableView" destination="ewc-fb-qzg" id="fbH-KB-v4x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHJ-nB-KKu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905" y="296"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="w72-Eo-Vvt">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4sF-FD-m9m" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MSZ-mc-mWN">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Zxz-xu-oPE"/>
+                        <segue destination="s68-2X-MOb" kind="relationship" relationship="viewControllers" id="ZDA-C3-Qhq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8PR-KU-If4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-105" y="-32"/>
         </scene>
     </scenes>
     <resources>

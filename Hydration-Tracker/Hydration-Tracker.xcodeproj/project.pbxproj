@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		110188051B93067C59F4FA14 /* Pods_Hydration_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F46BB5746DE14C0B1EC4BA /* Pods_Hydration_TrackerTests.framework */; };
+		922867BC290C5E3800A8051F /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922867BB290C5E3800A8051F /* StatsViewController.swift */; };
+		922867BE290C5F7000A8051F /* StatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922867BD290C5F7000A8051F /* StatsCell.swift */; };
 		92CFED182905B00F00E2089F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFED172905B00F00E2089F /* AppDelegate.swift */; };
 		92CFED1A2905B00F00E2089F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFED192905B00F00E2089F /* SceneDelegate.swift */; };
 		92CFED1C2905B00F00E2089F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFED1B2905B00F00E2089F /* ViewController.swift */; };
@@ -43,6 +45,8 @@
 		0A1FEEDB7FD225A00E3CE2A9 /* Pods-Hydration-TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydration-TrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-Hydration-TrackerTests/Pods-Hydration-TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43F327FD02A5C9D5E3711963 /* Pods-Hydration-TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydration-TrackerTests.release.xcconfig"; path = "Target Support Files/Pods-Hydration-TrackerTests/Pods-Hydration-TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		67F46BB5746DE14C0B1EC4BA /* Pods_Hydration_TrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hydration_TrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		922867BB290C5E3800A8051F /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		922867BD290C5F7000A8051F /* StatsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCell.swift; sourceTree = "<group>"; };
 		92CFED142905B00F00E2089F /* Hydration-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hydration-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CFED172905B00F00E2089F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92CFED192905B00F00E2089F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 			children = (
 				92CFED172905B00F00E2089F /* AppDelegate.swift */,
 				92CFED192905B00F00E2089F /* SceneDelegate.swift */,
+				922867BD290C5F7000A8051F /* StatsCell.swift */,
+				922867BB290C5E3800A8051F /* StatsViewController.swift */,
 				92CFED1B2905B00F00E2089F /* ViewController.swift */,
 				92CFED1D2905B00F00E2089F /* Main.storyboard */,
 				92CFED202905B01100E2089F /* Assets.xcassets */,
@@ -164,7 +170,6 @@
 				0A1FEEDB7FD225A00E3CE2A9 /* Pods-Hydration-TrackerTests.debug.xcconfig */,
 				43F327FD02A5C9D5E3711963 /* Pods-Hydration-TrackerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -409,7 +414,9 @@
 			files = (
 				92CFED1C2905B00F00E2089F /* ViewController.swift in Sources */,
 				92CFED182905B00F00E2089F /* AppDelegate.swift in Sources */,
+				922867BC290C5E3800A8051F /* StatsViewController.swift in Sources */,
 				92CFED1A2905B00F00E2089F /* SceneDelegate.swift in Sources */,
+				922867BE290C5F7000A8051F /* StatsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
