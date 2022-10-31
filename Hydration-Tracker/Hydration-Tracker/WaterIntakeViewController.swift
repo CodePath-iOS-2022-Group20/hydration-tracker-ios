@@ -20,7 +20,20 @@ class WaterIntakeViewController: UIViewController {
         super.viewDidLoad()
         let water = user?["daily_water"]
         waterAmountLabel.text = ("\(water ?? "nil")") + "mL"
-        
+        let login_date = String(Date().formatted(date: .complete, time: .complete))
+        if login_date != user?["last_login"] as! String {
+            user?["last_login"] = login_date
+            var daily_water = user?["daily_water"] as! Int
+            if daily_water == user?["water_goal"] as! Int{
+                user?["streak"] = user?["streak"] as! Int + 1
+            } else {
+                user?["streak"] = 0
+            }
+            user?["total_water"] = user!["total_water"] as! Int + daily_water
+            user?["daily_water"] = 0
+            user?.saveInBackground()
+            waterAmountLabel.text = "0 mL"
+        }
         // Do any additional setup after loading the view.
     }
     
