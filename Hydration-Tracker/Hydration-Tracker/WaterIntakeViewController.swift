@@ -10,11 +10,13 @@ import Parse
 
 class WaterIntakeViewController: UIViewController {
     
+    
     let user = PFUser.current()
     
-    @IBOutlet weak var waterAmountField: UITextField!
+    @IBOutlet weak var streakLabel: UILabel!
     @IBOutlet weak var addOrLowerSelection: UISegmentedControl!
     @IBOutlet weak var waterAmountLabel: UILabel!
+    @IBOutlet weak var waterAmountField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +26,7 @@ class WaterIntakeViewController: UIViewController {
         if login_date != user?["last_login"] as! String {
             user?["last_login"] = login_date
             var daily_water = user?["daily_water"] as! Int
-            if daily_water == user?["water_goal"] as! Int{
+            if daily_water >= user?["water_goal"] as! Int{
                 user?["streak"] = user?["streak"] as! Int + 1
             } else {
                 user?["streak"] = 0
@@ -33,6 +35,8 @@ class WaterIntakeViewController: UIViewController {
             user?["daily_water"] = 0
             user?.saveInBackground()
             waterAmountLabel.text = "0 mL"
+            let streak = user?["streak"]
+            streakLabel.text = "Streak: " + ("\(streak ?? "nil")")
         }
         // Do any additional setup after loading the view.
     }
@@ -58,6 +62,13 @@ class WaterIntakeViewController: UIViewController {
         }
     }
     
+    @IBAction func onLogout(_ sender: Any) {
+        PFUser.logOut()
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else { return }
+        delegate.window?.rootViewController = loginViewController
+    }
     /*
     // MARK: - Navigation
 

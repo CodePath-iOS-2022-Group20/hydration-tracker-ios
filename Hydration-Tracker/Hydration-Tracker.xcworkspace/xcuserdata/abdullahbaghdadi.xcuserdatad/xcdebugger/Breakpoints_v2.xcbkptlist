@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FC0300E0-0BA3-404B-AFF9-16C278B5EE18"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB15CF92-AFA5-4E9C-91CB-94530ADE1964"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hydration-Tracker/WaterIntakeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "WaterIntakeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "BB15CF92-AFA5-4E9C-91CB-94530ADE1964 - a0b08f09c8004cab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hydration_Tracker.WaterIntakeViewController.addOrLowerSelection.getter : Swift.Optional&lt;__C.UISegmentedControl&gt;"
+                  moduleName = "Hydration-Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdullahbaghdadi/Documents/GitHub/hydration-tracker-ios/Hydration-Tracker/Hydration-Tracker/WaterIntakeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "BB15CF92-AFA5-4E9C-91CB-94530ADE1964 - 6b4f0d674504749f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hydration_Tracker.WaterIntakeViewController.addOrLowerSelection.setter : Swift.Optional&lt;__C.UISegmentedControl&gt;"
+                  moduleName = "Hydration-Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdullahbaghdadi/Documents/GitHub/hydration-tracker-ios/Hydration-Tracker/Hydration-Tracker/WaterIntakeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "BB15CF92-AFA5-4E9C-91CB-94530ADE1964 - bd8b1b04eed4aeae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hydration_Tracker.WaterIntakeViewController.addOrLowerSelection.modify : Swift.Optional&lt;__C.UISegmentedControl&gt;"
+                  moduleName = "Hydration-Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdullahbaghdadi/Documents/GitHub/hydration-tracker-ios/Hydration-Tracker/Hydration-Tracker/WaterIntakeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "BB15CF92-AFA5-4E9C-91CB-94530ADE1964 - dce1793de1e6e6ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hydration_Tracker.WaterIntakeViewController.addOrLowerSelection.modify : Swift.Optional&lt;__C.UISegmentedControl&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Hydration-Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdullahbaghdadi/Documents/GitHub/hydration-tracker-ios/Hydration-Tracker/Hydration-Tracker/WaterIntakeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "BB15CF92-AFA5-4E9C-91CB-94530ADE1964 - 4aa3d7b51a3b75af"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hydration_Tracker.WaterIntakeViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Hydration_Tracker.WaterIntakeViewController"
+                  moduleName = "Hydration-Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdullahbaghdadi/Documents/GitHub/hydration-tracker-ios/Hydration-Tracker/Hydration-Tracker/WaterIntakeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "253">
+               </Location>
+               <Location
+                  uuid = "BB15CF92-AFA5-4E9C-91CB-94530ADE1964 - d49d0dc09e5944c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hydration_Tracker.WaterIntakeViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Hydration_Tracker.WaterIntakeViewController&gt;"
+                  moduleName = "Hydration-Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdullahbaghdadi/Documents/GitHub/hydration-tracker-ios/Hydration-Tracker/Hydration-Tracker/WaterIntakeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "210">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

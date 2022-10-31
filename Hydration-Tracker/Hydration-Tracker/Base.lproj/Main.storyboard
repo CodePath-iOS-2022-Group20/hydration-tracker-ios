@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Water Intake-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WaterIntakeViewController" customModule="Hydration_Tracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,15 +50,32 @@
                                     <action selector="onSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yBi-Nb-SKI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOf-gB-kyv">
+                                <rect key="frame" x="42" y="97" width="78" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="onLogout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PAz-st-ucD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZi-Fj-wg0">
+                                <rect key="frame" x="72" y="412" width="228" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="JFE-ye-vM2"/>
+                    <tabBarItem key="tabBarItem" title="Water Intake" selectedImage="takeoutbag.and.cup.and.straw.fill" catalog="system" id="JFE-ye-vM2"/>
                     <connections>
                         <outlet property="addOrLowerSelection" destination="DCz-Lr-xFg" id="tUf-90-9GJ"/>
-                        <outlet property="waterAmountField" destination="aWJ-Ck-50B" id="osT-bi-pUB"/>
-                        <outlet property="waterAmountLabel" destination="V4Q-pt-OYk" id="Q3p-Zd-v3h"/>
+                        <outlet property="streakLabel" destination="qZi-Fj-wg0" id="pT8-8F-hpR"/>
+                        <outlet property="waterAmountField" destination="aWJ-Ck-50B" id="gR3-6K-2Lb"/>
+                        <outlet property="waterAmountLabel" destination="V4Q-pt-OYk" id="T8k-56-bUI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -68,7 +85,7 @@
         <!--Login View Controller-->
         <scene sceneID="ZES-xG-h9j">
             <objects>
-                <viewController id="GtP-g6-62Q" customClass="LoginViewController" customModule="Hydration_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="GtP-g6-62Q" customClass="LoginViewController" customModule="Hydration_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rYJ-Sc-lLw">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,7 +158,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="sQg-rJ-d3X">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="g3N-Pw-2j2" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="WaterIntakeViewController" automaticallyAdjustsScrollViewInsets="NO" id="g3N-Pw-2j2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="twP-Rb-39q">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -159,6 +176,7 @@
     </scenes>
     <resources>
         <image name="takeoutbag.and.cup.and.straw" catalog="system" width="128" height="109"/>
+        <image name="takeoutbag.and.cup.and.straw.fill" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
