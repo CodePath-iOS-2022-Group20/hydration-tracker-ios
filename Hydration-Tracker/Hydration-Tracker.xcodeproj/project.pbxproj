@@ -20,6 +20,7 @@
 		92CFED392905B01200E2089F /* Hydration_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFED382905B01200E2089F /* Hydration_TrackerUITests.swift */; };
 		92CFED3B2905B01200E2089F /* Hydration_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFED3A2905B01200E2089F /* Hydration_TrackerUITestsLaunchTests.swift */; };
 		9DF176C3F6DD749A083A4AE0 /* Pods_Hydration_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001BD07C4D146F103DC74E7D /* Pods_Hydration_Tracker.framework */; };
+		E22D55AF2911E13900287CF4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22D55AE2911E13900287CF4 /* SettingsViewController.swift */; };
 		E6A9EFC97E34A759B2868507 /* Pods_Hydration_Tracker_Hydration_TrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2460B16B1DB8E5EE615E891 /* Pods_Hydration_Tracker_Hydration_TrackerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		92CFED3A2905B01200E2089F /* Hydration_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydration_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B7E64A18F5A8BCE3094AFBC1 /* Pods-Hydration-Tracker-Hydration-TrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydration-Tracker-Hydration-TrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hydration-Tracker-Hydration-TrackerUITests/Pods-Hydration-Tracker-Hydration-TrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8347266EBBC9D5948CAA1B7 /* Pods-Hydration-Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydration-Tracker.release.xcconfig"; path = "Target Support Files/Pods-Hydration-Tracker/Pods-Hydration-Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		E22D55AE2911E13900287CF4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EE8ABF7F479D13841FF46F0A /* Pods-Hydration-Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydration-Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Hydration-Tracker/Pods-Hydration-Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		F2460B16B1DB8E5EE615E891 /* Pods_Hydration_Tracker_Hydration_TrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hydration_Tracker_Hydration_TrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9721A0622D5470448A87F4A /* Pods-Hydration-Tracker-Hydration-TrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydration-Tracker-Hydration-TrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-Hydration-Tracker-Hydration-TrackerUITests/Pods-Hydration-Tracker-Hydration-TrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				92CFED192905B00F00E2089F /* SceneDelegate.swift */,
 				92CFED1B2905B00F00E2089F /* ViewController.swift */,
 				922867C3290EEF4600A8051F /* LoginViewController.swift */,
+				E22D55AE2911E13900287CF4 /* SettingsViewController.swift */,
 				922867C5290EF80D00A8051F /* WaterIntakeViewController.swift */,
 				92CFED1D2905B00F00E2089F /* Main.storyboard */,
 				92CFED202905B01100E2089F /* Assets.xcassets */,
@@ -417,6 +420,7 @@
 				92CFED1C2905B00F00E2089F /* ViewController.swift in Sources */,
 				92CFED182905B00F00E2089F /* AppDelegate.swift in Sources */,
 				92CFED1A2905B00F00E2089F /* SceneDelegate.swift in Sources */,
+				E22D55AF2911E13900287CF4 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
