@@ -41,7 +41,7 @@ An app that keeps track of how much water a user drinks, reminds them to drink w
 - [ ] User can share data on social media using an API
 - [ ] User can set a goal for water to drink in a day/week/month
 - [ ] User can keep track of streak
-- [ ] User can add water in 50/100/200 ml increments or set their own number of ml to add
+- [x] User can add water in 50/100/200 ml increments or set their own number of ml to add
 - [ ] Animation or nice display of some meter filling up based off of water intake
 
 
