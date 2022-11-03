@@ -46,21 +46,24 @@ class WaterIntakeViewController: UIViewController {
     @IBAction func onSubmit(_ sender: Any) {
         var fadeAnim: CABasicAnimation = CABasicAnimation(keyPath: "contents")
 
+        let water = user?["daily_water"]
+        let goal = user?["water_goal"]
         
         if addOrLowerSelection.selectedSegmentIndex == 0 {
             let waterAmountText = waterAmountField.text ?? ""
             let waterAmount = Int(waterAmountText) ?? 0
             user?["daily_water"] = user?["daily_water"] as! Int + waterAmount
             user?.saveInBackground()
-            let water = user?["daily_water"]
             waterAmountLabel.text = ("\(water ?? "nil")") + "mL"
             
-            fadeAnim.fromValue = waterImage
-            fadeAnim.toValue = UIImage(systemName: "takeoutbag.and.cup.and.straw.fill")
-            fadeAnim.duration = 0.8
-            waterImage.layer.add(fadeAnim, forKey: "contents")
-            
-            waterImage.image = UIImage(systemName: "takeoutbag.and.cup.and.straw.fill")
+            if water as! Int >= goal as! Int {
+                fadeAnim.fromValue = waterImage
+                fadeAnim.toValue = UIImage(systemName: "takeoutbag.and.cup.and.straw.fill")
+                fadeAnim.duration = 0.8
+                waterImage.layer.add(fadeAnim, forKey: "contents")
+                
+                waterImage.image = UIImage(systemName: "takeoutbag.and.cup.and.straw.fill")
+            }
         }
         
         if addOrLowerSelection.selectedSegmentIndex == 1 {
@@ -71,12 +74,14 @@ class WaterIntakeViewController: UIViewController {
             let water = user?["daily_water"]
             waterAmountLabel.text = ("\(water ?? "nil")") + "mL"
             
-            fadeAnim.fromValue = waterImage
-            fadeAnim.toValue = UIImage(systemName: "takeoutbag.and.cup.and.straw")
-            fadeAnim.duration = 0.8
-            waterImage.layer.add(fadeAnim, forKey: "contents")
-            
-            waterImage.image = UIImage(systemName: "takeoutbag.and.cup.and.straw")
+            if  goal as! Int > water as! Int{
+                fadeAnim.fromValue = waterImage
+                fadeAnim.toValue = UIImage(systemName: "takeoutbag.and.cup.and.straw")
+                fadeAnim.duration = 0.8
+                waterImage.layer.add(fadeAnim, forKey: "contents")
+                
+                waterImage.image = UIImage(systemName: "takeoutbag.and.cup.and.straw")
+            }
         }
         
         
