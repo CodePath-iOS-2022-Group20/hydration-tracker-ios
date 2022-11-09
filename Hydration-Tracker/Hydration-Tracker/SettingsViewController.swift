@@ -19,6 +19,8 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        let user = PFUser.current()
+        changeGoalField.text = String(user?["water_goal"] as? Int ?? 0)
     }
     
     @IBAction func onSubmit(_ sender: Any) {

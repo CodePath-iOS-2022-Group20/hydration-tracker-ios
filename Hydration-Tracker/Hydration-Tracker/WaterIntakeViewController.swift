@@ -40,6 +40,19 @@ class WaterIntakeViewController: UIViewController {
             streakLabel.text = "Streak: " + ("\(streak ?? "nil")")
             user?["last_login"] = login_date
         }
+        
+        let goal = user?["water_goal"]
+        
+        var fadeAnim: CABasicAnimation = CABasicAnimation(keyPath: "contents")
+        
+        if water as! Int >= goal as! Int {
+            fadeAnim.fromValue = waterImage
+            fadeAnim.toValue = UIImage(systemName: "takeoutbag.and.cup.and.straw.fill")
+            fadeAnim.duration = 0.8
+            waterImage.layer.add(fadeAnim, forKey: "contents")
+            
+            waterImage.image = UIImage(systemName: "takeoutbag.and.cup.and.straw.fill")
+        }
         // Do any additional setup after loading the view.
     }
     
