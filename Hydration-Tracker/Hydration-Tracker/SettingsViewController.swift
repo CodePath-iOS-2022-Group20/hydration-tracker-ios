@@ -22,9 +22,13 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func onSubmit(_ sender: Any) {
-        let user = PFUser()
-        user["water_goal"] = changeGoalField.text
-        print(user["water_goal"])
+        let user = PFUser.current()
+        
+        var goalFieldText = changeGoalField.text ?? ""
+        var goalFieldInt = Int(goalFieldText) ?? 0
+        user?["water_goal"] = goalFieldInt ?? 0
+        user?.saveInBackground()
+        print(user?["water_goal"])
     }
     
     
