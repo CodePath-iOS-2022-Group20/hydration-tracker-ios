@@ -24,12 +24,12 @@ An app that keeps track of how much water a user drinks, reminds them to drink w
 ### 1. User Stories (Required and Optional)
 
 #### Walkthrough 1:
-![](https://i.imgur.com/VdqKlRM.gif)
+![](https://i.imgur.com/NmEkt6E.gif)
 
 **Required Must-have Stories**
 
 - [x] User gets to keep count of water taken in a day
-- [x] User can add water in 50 ml increments
+- [x] User can add water in customizable increments
 - [x] User can delete a record in case they accidentally add too much water
 - [x] Provides stats such as total water, total days of meeting goals, and average water
 - [x] User can set a water goal
@@ -39,10 +39,10 @@ An app that keeps track of how much water a user drinks, reminds them to drink w
 - [ ] User can enable reminders in the form of notifications to drink water
 - [ ] User can keep track of water history in a month/week using a calender UI
 - [ ] User can share data on social media using an API
-- [ ] User can set a goal for water to drink in a day/week/month
-- [ ] User can keep track of streak
-- [x] User can add water in 50/100/200 ml increments or set their own number of ml to add
-- [ ] Animation or nice display of some meter filling up based off of water intake
+- [x] User can set a goal for water to drink in a day/week/month
+- [x] Animation or nice display of some meter filling up based off of water intake
+- [x] User can keep track of streak
+
 
 
 ### 2. Screen Archetypes
