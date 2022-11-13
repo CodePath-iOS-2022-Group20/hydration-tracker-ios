@@ -13,7 +13,6 @@ class WaterIntakeViewController: UIViewController {
     
     let user = PFUser.current()
     
-    @IBOutlet weak var streakLabel: UILabel!
     @IBOutlet weak var addOrLowerSelection: UISegmentedControl!
     @IBOutlet weak var waterAmountLabel: UILabel!
     @IBOutlet weak var waterAmountField: UITextField!
@@ -36,8 +35,6 @@ class WaterIntakeViewController: UIViewController {
             user?["daily_water"] = 0
             user?.saveInBackground()
             waterAmountLabel.text = "0 mL"
-            let streak = user?["streak"]
-            streakLabel.text = "Streak: " + ("\(streak ?? "nil")")
             user?["last_login"] = login_date
         }
         

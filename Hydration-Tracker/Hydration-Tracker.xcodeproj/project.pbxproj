@@ -10,9 +10,9 @@
 		110188051B93067C59F4FA14 /* Pods_Hydration_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F46BB5746DE14C0B1EC4BA /* Pods_Hydration_TrackerTests.framework */; };
 		922867C4290EEF4600A8051F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922867C3290EEF4600A8051F /* LoginViewController.swift */; };
 		922867C6290EF80D00A8051F /* WaterIntakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922867C5290EF80D00A8051F /* WaterIntakeViewController.swift */; };
+		92C3C9E029216B1F008A67B0 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C3C9DF29216B1F008A67B0 /* StatsViewController.swift */; };
 		92CFED182905B00F00E2089F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFED172905B00F00E2089F /* AppDelegate.swift */; };
 		92CFED1A2905B00F00E2089F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFED192905B00F00E2089F /* SceneDelegate.swift */; };
-		92CFED1C2905B00F00E2089F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFED1B2905B00F00E2089F /* ViewController.swift */; };
 		92CFED1F2905B00F00E2089F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CFED1D2905B00F00E2089F /* Main.storyboard */; };
 		92CFED212905B01100E2089F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CFED202905B01100E2089F /* Assets.xcassets */; };
 		92CFED242905B01100E2089F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CFED222905B01100E2089F /* LaunchScreen.storyboard */; };
@@ -48,10 +48,10 @@
 		67F46BB5746DE14C0B1EC4BA /* Pods_Hydration_TrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hydration_TrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		922867C3290EEF4600A8051F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		922867C5290EF80D00A8051F /* WaterIntakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeViewController.swift; sourceTree = "<group>"; };
+		92C3C9DF29216B1F008A67B0 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		92CFED142905B00F00E2089F /* Hydration-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hydration-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CFED172905B00F00E2089F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92CFED192905B00F00E2089F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92CFED1B2905B00F00E2089F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92CFED1E2905B00F00E2089F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92CFED202905B01100E2089F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92CFED232905B01100E2089F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -134,10 +134,10 @@
 			children = (
 				92CFED172905B00F00E2089F /* AppDelegate.swift */,
 				92CFED192905B00F00E2089F /* SceneDelegate.swift */,
-				92CFED1B2905B00F00E2089F /* ViewController.swift */,
 				922867C3290EEF4600A8051F /* LoginViewController.swift */,
 				E22D55AE2911E13900287CF4 /* SettingsViewController.swift */,
 				922867C5290EF80D00A8051F /* WaterIntakeViewController.swift */,
+				92C3C9DF29216B1F008A67B0 /* StatsViewController.swift */,
 				92CFED1D2905B00F00E2089F /* Main.storyboard */,
 				92CFED202905B01100E2089F /* Assets.xcassets */,
 				92CFED222905B01100E2089F /* LaunchScreen.storyboard */,
@@ -417,8 +417,8 @@
 			files = (
 				922867C4290EEF4600A8051F /* LoginViewController.swift in Sources */,
 				922867C6290EF80D00A8051F /* WaterIntakeViewController.swift in Sources */,
-				92CFED1C2905B00F00E2089F /* ViewController.swift in Sources */,
 				92CFED182905B00F00E2089F /* AppDelegate.swift in Sources */,
+				92C3C9E029216B1F008A67B0 /* StatsViewController.swift in Sources */,
 				92CFED1A2905B00F00E2089F /* SceneDelegate.swift in Sources */,
 				E22D55AF2911E13900287CF4 /* SettingsViewController.swift in Sources */,
 			);
