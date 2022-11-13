@@ -16,8 +16,8 @@ class StatsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "statsCell", for: indexPath) as! statsCellTableView
-        
+  /*      let cell = tableView.dequeueReusableCell(withIdentifier: "statsCell", for: indexPath) as! statsCellTableView
+ */
         tableView.refreshControl = myRefreshControl
         let water = user?["daily_water"]
         cell.todaysTotalAmountLabel.text = ("\(water ?? "nil")") + "mL"
