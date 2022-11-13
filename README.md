@@ -31,12 +31,12 @@ An app that keeps track of how much water a user drinks, reminds them to drink w
 - [x] User gets to keep count of water taken in a day
 - [x] User can add water in 50 ml increments
 - [x] User can delete a record in case they accidentally add too much water
-- [ ] User can enable reminders in the form of notifications to drink water
-- [ ] Provides stats such as total water, total days of meeting goals, and average water 
+- [x] Provides stats such as total water, total days of meeting goals, and average water
+- [x] User can set a water goal
 
 **Optional Nice-to-have Stories**
 
-- [ ] User can set a water goal
+- [ ] User can enable reminders in the form of notifications to drink water
 - [ ] User can keep track of water history in a month/week using a calender UI
 - [ ] User can share data on social media using an API
 - [ ] User can set a goal for water to drink in a day/week/month
