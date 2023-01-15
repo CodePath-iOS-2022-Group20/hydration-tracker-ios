@@ -1,4 +1,3 @@
-# hydration-tracker-ios
 # Hydration Tracker iOS
 
 ## Table of Contents
